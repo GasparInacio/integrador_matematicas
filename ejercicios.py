@@ -5,7 +5,7 @@ from matplotlib_venn import venn2
 # Función para generar diagramas de venn con la librería matplotlib
 def mostrar_diagrama_venn_2(a, b):
     venn2((a, b), set_labels=("DNI1", "DNI2"))
-    plt.title("Diagrama de Venn\nmuestra la cantidad de números que se encuentran en cada parte")
+    plt.title("Muestra la cantidad de números que\nse encuentran en cada parte del diagrama")
     plt.show()
 
 
@@ -15,27 +15,19 @@ def extraer_digitos_unicos(dni):
 
 
 def union(a, b):
-    mostrar_diagrama_venn_2(a, b)
-    union_conjuntos = a.union(b)
-    return union_conjuntos
-
+    return a.union(b)
 
 def interseccion(a, b):
-    mostrar_diagrama_venn_2(a, b)
-    intersection_conjuntos = a.intersection(b)
-    return intersection_conjuntos
+     return a.intersection(b)
+
 
 
 def diferencia(a, b):
-    mostrar_diagrama_venn_2(a, b)
-    diferencia_conjuntos = a.difference(b)
-    return diferencia_conjuntos
+    return a.difference(b)
 
 
 def diferencia_simetrica(a, b):
-    mostrar_diagrama_venn_2(a, b)
-    dif_simetrica = a.symmetric_difference(b)
-    return dif_simetrica
+    return a.symmetric_difference(b)
 
 
 def frecuencia_dnis(a, b):
@@ -62,17 +54,17 @@ def diversidad_numerica(a, b):
     conj1 = list(str(a))
     conj2 = list(str(b))
     if len(conj1) or len(conj2) >= 6:
-        print('Diversidad numérica alta')
+        print('\nDiversidad numérica alta')
     else:
-        print('No existe diversidad numérica alta en ningún conjunto')
+        print('\nNo existe diversidad numérica alta en ningún conjunto')
 
 
 def digitos_compartidos(a, b):
     compartidos = a.intersection(b)
     if compartidos:
-        print('Dígitos compartidos: ', compartidos)
+        print('\nDígitos compartidos: ', compartidos)
     else:
-        print('No se comparten dígitos entre los conjuntos')
+        print('\nNo se comparten dígitos entre los conjuntos')
 
 
 # Operaciones con años
@@ -85,7 +77,7 @@ def es_par(a, b):
             par += 1
         else:
             impar += 1
-    print('Nacieron en años pares: ', par)
+    print('\nNacieron en años pares: ', par)
     print('Nacieron en años impares: ', impar)
 
 
@@ -93,9 +85,9 @@ def grupo_z(a, b):
     if (a and b) > 2000:
         print('Grupo Z')
     elif (a or b) > 2000:
-        print('Uno de los integrantes pertenece al Grupo Z')
+        print('\nUno de los integrantes pertenece al Grupo Z')
     else:
-        print('Ninguno de los integrantes pertenece al Grupo Z')
+        print('\nNinguno de los integrantes pertenece al Grupo Z')
 
 
 def es_bisiesto(a):
