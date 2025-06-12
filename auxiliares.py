@@ -161,7 +161,7 @@ def submenu_anios():
             '\n1. Años pares o impares\n2. Grupo Z\n3. Años bisiestos\n4. Producto cartesiano entre conjunto de años y conjunto de edades')
 
         try:
-            opc_anios = int(input('Ingrese una opción ó "0" para salir: '))
+            opc_anios = int(input('\nIngrese una opción ó "0" para salir: '))
         except ValueError:
             print('\nOpcion incorrecta, intente nuevamente')
             continue

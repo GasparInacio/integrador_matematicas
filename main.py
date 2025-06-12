@@ -8,7 +8,7 @@ def main():
         print('Integrantes: Gaspar Inacio, Francisco Gutierrez')
         print('#############################################')
         print('\nA. Operaciones con DNIs\nB. Operaciones con años de nacimiento')
-        opc = input('Ingrese una opción o "X" para salir: ').lower()
+        opc = input('\nIngrese una opción o "X" para salir: ').lower()
 
         if opc == 'x':
             print('\nSaliendo...')
