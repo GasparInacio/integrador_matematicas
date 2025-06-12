@@ -12,7 +12,7 @@ from ejercicios import extraer_digitos_unicos, interseccion, union, diferencia, 
 # Datos
 # DNIs de integrantes del grupo
 dni1 = 37050296
-dni2 = 37860214
+dni2 = 38987027
 
 # Formación de los conjuntos con digitos únicos de cada integrante
 conjunto1 = extraer_digitos_unicos(dni1)
@@ -119,7 +119,7 @@ def submenu_dnis():
 # Ejercicios con años
 # Datos
 anio1 = 1993
-anio2 = 1998
+anio2 = 1995
 
 
 def imprimir_datos_anio():
