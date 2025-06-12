@@ -18,7 +18,7 @@ def main():
         elif opc == 'b':
             submenu_anios()
         else:
-            print('Opcion incorrecta, reintente nuevamente')
+            print('\nOpcion incorrecta, reintente nuevamente')
             continue
 
 

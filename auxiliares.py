@@ -123,7 +123,8 @@ anio2 = 1998
 
 
 def imprimir_datos_anio():
-    print('\n', anio1)
+    print('\nAños:')
+    print(anio1)
     print(anio2)
 
 
