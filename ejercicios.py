@@ -51,12 +51,10 @@ def sumar_digitos(a):
 
 # Operaciones lógicas
 def diversidad_numerica(a, b):
-    conj1 = list(str(a))
-    conj2 = list(str(b))
-    if len(conj1) or len(conj2) >= 6:
+    if (len(a) and len(b)) >= 5:
         print('\nDiversidad numérica alta')
     else:
-        print('\nNo existe diversidad numérica alta en ningún conjunto')
+        print('\nNo existe diversidad numérica alta en los conjunto')
 
 
 def digitos_compartidos(a, b):
