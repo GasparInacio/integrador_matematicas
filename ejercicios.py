@@ -11,7 +11,7 @@ def mostrar_diagrama_venn_2(a, b):
 
 # Operaciones con DNIs
 def extraer_digitos_unicos(dni):
-    return set(str(dni))
+    return {int(digito) for digito in str(dni)}
 
 
 def union(a, b):
