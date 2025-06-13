@@ -72,7 +72,7 @@ def evaluacion_logica():
     digitos_compartidos(conjunto1, conjunto2)
 
 
-# Sybmenú DNIs
+# Submenú DNIs
 def submenu_dnis():
     while True:
         print('\n#############################################')

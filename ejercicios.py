@@ -14,12 +14,13 @@ def extraer_digitos_unicos(dni):
     return {int(digito) for digito in str(dni)}
 
 
+# Operaciones con conjuntos
 def union(a, b):
     return a.union(b)
 
-def interseccion(a, b):
-     return a.intersection(b)
 
+def interseccion(a, b):
+    return a.intersection(b)
 
 
 def diferencia(a, b):
